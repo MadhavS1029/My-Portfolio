@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <title>Madhav Sharma</title>
+</head>
+<body>
+  
+    <div class="navbar">
+        <header>
+            <a href="#" class="navbar-logo">MADHAV SHARMA</a>
+            <ul>
+                <li><a href="#" class="work-btn">Work, </a></li>
+                <li><a href="#" class="about-me-btn">About me, </a></li>
+                <li><a href="#" class="get-in-touch-btn">Get in touch</a></li>
+            </ul>
+        </header>
+    </div>
+
+    <div id="wrapper">
+        <div class="portfolio-item">
+            <div class="portfolio-thumb">
+                <img src="images/dev img.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <p class="subtitle">Currently a computer science student at vellore institute of technology.</p>
+    <h1 class="creat-dev">CREATIVE DEVELOPER</h1>
+    <h1 class="name">MADHAV SHARMA</h1>
+
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <script>
+        var cursor = $(".cursor"),
+            follower = $(".cursor-follower");
+
+        var posX = 0,
+            posY = 0,
+            mouseX = 0,
+            mouseY = 0;
+
+        TweenMax.to({}, 0.016, {
+            repeat: -1,
+            onRepeat: function() {
+                posX += (mouseX - posX) / 9;
+                posY += (mouseY - posY) / 9;
+
+                TweenMax.set(follower, {
+                    css: {
+                        left: posX - 20,
+                        top: posY - 20
+                    }
+                });
+
+                TweenMax.set(cursor, {
+                    css: {
+                        left: mouseX,
+                        top: mouseY
+                    }
+                });
+            }
+        });
+
+        $(document).on("mousemove", function(e) {
+            mouseX = e.pageX;
+            mouseY = e.pageY;
+        });
+
+        $(".work-btn").on("mouseenter",function(){
+            cursor.addClass("active");
+            follower.addClass("active");
+        });
+
+        $(".work-btn").on("mouseleave",function(){
+            cursor.removeClass("active");
+            follower.removeClass("active");
+        });
+
+        $(".about-me-btn").on("mouseenter",function(){
+            cursor.addClass("active");
+            follower.addClass("active");
+        });
+
+        $(".about-me-btn").on("mouseleave",function(){
+            cursor.removeClass("active");
+            follower.removeClass("active");
+        });
+
+        $(".get-in-touch-btn").on("mouseenter",function(){
+            cursor.addClass("active");
+            follower.addClass("active");
+        });
+
+        $(".get-in-touch-btn").on("mouseleave",function(){
+            cursor.removeClass("active");
+            follower.removeClass("active");
+        });
+
+        $(".navbar-logo").on("mouseenter",function(){
+            cursor.addClass("active");
+            follower.addClass("active");
+        });
+
+        $(".navbar-logo").on("mouseleave",function(){
+            cursor.removeClass("active");
+            follower.removeClass("active");
+        });
+
+    </script>
+
+</body>
+</html>
