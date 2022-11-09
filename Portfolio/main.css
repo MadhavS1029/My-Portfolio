@@ -20,10 +20,10 @@ a{
   /* MADHAV SHARMA */
 
 
-position: absolute;
+position: fixed;
 width: 301px;
 height: 42px;
-left: 122px;
+left: 53px;
 top: 30px;
 
 font-family: 'Neue Montreal';
@@ -32,6 +32,7 @@ font-weight: 700;
 font-size: 25px;
 line-height: 42px;
 background-color:rgba(0, 0, 0, 0);
+mix-blend-mode: difference;
 /* identical to box height */
 
 
@@ -42,16 +43,17 @@ color: #FFFFFF;
   /* Work, */
 
 
-position: absolute;
+position: fixed;
 width: 93px;
 height: 42px;
-left: 1053px;
-top: 30px;
+left: 1196px;
+top: 34px;
 
 font-family: 'Neue Montreal';
+mix-blend-mode: difference;
 font-style: normal;
 font-weight: 700;
-font-size: 25px;
+font-size: 20px;
 line-height: 42px;
 background-color:rgba(0, 0, 0, 0);
 /* identical to box height */
@@ -69,7 +71,7 @@ color: #FFFFFF;
   transition: width 0.25s ease-out;
 }
 .work-btn:hover:after{
-width: 65%;
+width: 55%;
 left: 0;
 right: auto;
 bottom: 6px;
@@ -79,16 +81,17 @@ bottom: 6px;
   /* Work, */
 
 
-position: absolute;
+position: fixed;
 width: 138px;
 height: 42px;
-left: 1127px;
-top: 30px;
+left: 1255px;
+top: 34px;
 
 font-family: 'Neue Montreal';
+mix-blend-mode: difference;
 font-style: normal;
 font-weight: 700;
-font-size: 25px;
+font-size: 20px;
 line-height: 42px;
 background-color:rgba(0, 0, 0, 0);
 /* identical to box height */
@@ -108,7 +111,7 @@ color: #FFFFFF;
   transition: width 0.25s ease-out;
 }
 .about-me-btn:hover:after{
-width: 79%;
+width: 65%;
 left: 0;
 right: auto;
 bottom: 6px;
@@ -118,16 +121,17 @@ bottom: 6px;
   /* Get in touch */
 
 
-position: absolute;
+position: fixed;
 width: 189px;
 height: 42px;
-left: 1248px;
-top: 30px;
+left: 1351px;
+top: 34px;
 
 font-family: 'Neue Montreal';
+mix-blend-mode: difference;
 font-style: normal;
 font-weight: 700;
-font-size: 25px;
+font-size: 20px;
 line-height: 42px;
 background-color:rgba(0, 0, 0, 0);
 /* identical to box height */
@@ -147,7 +151,7 @@ color: #FFFFFF;
   transition: width 0.25s ease-out;
 }
 .get-in-touch-btn:hover:after{
-width: 72%;
+width: 58%;
 left: 0;
 right: auto;
 bottom: 6px;
@@ -160,7 +164,7 @@ bottom: 6px;
 position: absolute;
 width: 193px;
 height: 100px;
-left: 121px;
+left: 53px;
 top: 150px;
 
 font-family: 'Neue Montreal';
@@ -179,15 +183,15 @@ color: #FFFFFF;
 
 
 position: absolute;
-width: 1007px;
+width: 804px;
 height: 412px;
-left: 119px;
-top: 303px;
+left: 47px;
+top: 322px;
 
 font-family: 'Neue Montreal';
 font-style: normal;
 font-weight: 700;
-font-size: 140px;
+font-size: 130px;
 line-height: 150px;
 background-color:rgba(0, 0, 0, 0);
 
@@ -201,8 +205,8 @@ color: #FFFFFF;
 position: absolute;
 width: 610px;
 height: 406px;
-left: 773px;
-top: 230px;
+left: 848px;
+top: 201px;
 z-index: -1000;
 background: url(image.png);
 overflow: hidden;
@@ -241,29 +245,65 @@ overflow: hidden;
 
 .cursor.active{
   opacity: 1;
-  transform: scale(12);
+  transform: scale(8);
 }
 
 .cursor.active:before{
   opacity: 1;
 }
 
-.cursor-follower{
-  position: absolute;
-  background: rgba(255, 255, 255, 0.1);
-  width: 40px;
-  height: 40px;
-  border-radius: 100%;
-  z-index: 1;
-  transition: 0.6s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
-      0.4s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity;
-  user-select: none;
-  pointer-events: none;
-  transform: translate(4px, 4px);
+.name{
+  /* MADHAV SHARMA */
+
+
+position: absolute;
+width: 512px;
+height: 292px;
+left: 944px;
+top: 705px;
+
+font-family: 'Neue Montreal';
+font-style: normal;
+font-weight: 500;
+font-size: 125px;
+line-height: 140px;
+background-color:rgba(0, 0, 0, 0);
+
+color: #FFFFFF;
 }
 
-.cursor-follower.active{
-  opacity:0.3;
-  transform:scale(0);
+.arrow{
+  /* Arrow 1 */
+
+
+box-sizing: border-box;
+
+position: absolute;
+width: 330px;
+height: 0px;
+left: 211px;
+top: 1005px;
+
+border: 5px solid #FFFFFF;
+transform: rotate(90deg);
 }
-.{}
+
+.quote{
+  /* Design is intelligence that has been made visible for the others to see. */
+
+
+position: absolute;
+width: 300px;
+height: 62px;
+left: 232px;
+top: 831px;
+
+font-family: 'Neue Montreal';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 31px;
+text-transform: uppercase;
+background-color:rgba(0, 0, 0, 0);
+color: #FFFFFF;
+}
