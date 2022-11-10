@@ -24,7 +24,7 @@ position: fixed;
 width: 301px;
 height: 42px;
 left: 53px;
-top: 30px;
+top: 33px;
 
 font-family: 'Neue Montreal';
 font-style: normal;
@@ -305,5 +305,91 @@ font-size: 20px;
 line-height: 31px;
 text-transform: uppercase;
 background-color:rgba(0, 0, 0, 0);
+color: #FFFFFF;
+}
+
+.based{
+  /* Based in Delhi India */
+
+
+position: absolute;
+width: 134px;
+height: 50px;
+left: 687px;
+top: 42px;
+
+font-family: 'Neue Montreal';
+font-style: normal;
+font-weight: 700;
+font-size: 21px;
+line-height: 25px;
+text-align: center;
+background-color:rgba(0, 0, 0, 0);
+color: #FFFFFF;
+}
+
+.o1{
+  /* 01/ */
+
+
+position: absolute;
+width: 31px;
+height: 25px;
+left: 53px;
+top: 1272px;
+
+font-family: 'Neue Montreal';
+font-style: normal;
+font-weight: 700;
+font-size: 21px;
+line-height: 25px;
+text-align: center;
+background-color:rgba(0, 0, 0, 0);
+
+color: #FFFFFF;
+}
+
+.web{
+  /* PASSIONATE ABOUT WEB DEVELOPMET. I LOVE WORKING WITH A MINIMALISTIC APPROACH WITH UTMOST CREATIVITY , CREATING USER FRIENDLY INTERFACES. I MAKE indelible WEB EXPERICES. */
+
+
+position: absolute;
+width: 937px;
+height: 348px;
+left: 395px;
+top: 1265px;
+
+font-family: 'Neue Montreal';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 58px;
+text-transform: uppercase;
+
+color: #FFFFFF;
+background-color:rgba(0, 0, 0, 0);
+
+color: #FFFFFF;
+
+}
+
+.web2{
+  /* WHEN I AM NOT WORKING OR EXPLORING SOMETHING NEW , I’M PROBABLY PLAYING GAMES OR STREAMING. */
+
+
+position: absolute;
+width: 948px;
+height: 174px;
+left: 397px;
+top: 1573px;
+
+font-family: 'Neue Montreal';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 58px;
+text-transform: uppercase;
+background-color:rgba(0, 0, 0, 0);
+
 color: #FFFFFF;
 }
