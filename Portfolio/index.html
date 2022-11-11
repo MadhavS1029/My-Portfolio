@@ -7,27 +7,28 @@
     <link rel="stylesheet" href="main.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
     <title>Madhav Sharma</title>
+    
 </head>
 <body>
-  
+    <script type="text/javascript" src="main.js"></script>
+
     <div class="navbar">
         <header>
             <a href="#" class="navbar-logo">MADHAV SHARMA</a>
             <ul>
                 <li><a href="#" class="work-btn">Work, </a></li>
-                <li><a href="#" class="about-me-btn">About me, </a></li>
+                <li><a href="about.html" class="about-me-btn">About me, </a></li>
                 <li><a href="#" class="get-in-touch-btn">Get in touch</a></li>
             </ul>
         </header>
     </div>
 
-    <div id="wrapper">
-        <div class="portfolio-item">
-            <div class="portfolio-thumb">
-                <img src="images/dev img.png" alt="">
-            </div>
-        </div>
+    <div class="portfolio-thumb">
+        <img src="images/dev img.png" alt="">
     </div>
 
     <p class="subtitle">Currently a computer science student at vellore institute of technology.</p>
@@ -115,6 +116,23 @@
 
     </script>
 
+    <script>
+        const logo = document.querySelector('.navbar-logo');
+        const work= document.querySelector('.work-btn');
+        const about = document.querySelector('.about-me-btn');
+        const get = document.querySelector('.get-in-touch-btn');
+        const img = document.querySelector('.portfolio-thumb');
+        const subtitle = document.querySelector('.subtitle');
+        const dev = document.querySelector('.creat-dev');
+        const name = document.querySelector('.name');
+        const based = document.querySelector('.based');
+
+        const tl = new TimelineMax();
+
+        tl.fromTo(img,1,{height:"0%"},{height:"52%", ease: Power2.easeInOut})
+
+    </script>
+
     <p class="quote">DESIGN IS INTELLIGENCE MADE VISIBLE FOR OTHERS TO SEE</p>
     <p class="based">Based in Delhi India</p>
     
@@ -129,6 +147,9 @@
     <P class="web2">WHEN I AM NOT WORKING OR EXPLORING
         SOMETHING NEW , I’M PROBABLY PLAYING
         GAMES OR STREAMING.</P>
+
+    <div class="slider"></div>
+    
     
 </body>
 </html>
