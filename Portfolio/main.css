@@ -4,7 +4,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background-color: black;
+  background-color: #141414;
 }
 body {
   font-family: sans-serif;
@@ -210,6 +210,11 @@ top: 201px;
 z-index: -1000;
 background: url(image.png);
 overflow: hidden;
+}
+
+.portfolio-thumb{
+  width: 60%;
+  height:100%;
 }
 
 .cursor{
